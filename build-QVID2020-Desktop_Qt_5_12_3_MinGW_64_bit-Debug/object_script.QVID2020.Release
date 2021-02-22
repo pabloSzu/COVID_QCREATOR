@@ -1,0 +1,12 @@
+release/ventana.o
+release/Widget.o
+release/adminbd.o
+release/grafico.o
+release/interfaz.o
+release/main.o
+release/qrc_recursos.o
+release/moc_adminbd.o
+release/moc_Widget.o
+release/moc_ventana.o
+release/moc_grafico.o
+release/moc_interfaz.o

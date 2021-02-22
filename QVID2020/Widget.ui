@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>876</width>
+    <height>738</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">BACKGROUND-COLOR:rgb(255, 254, 212)</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_4">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>50</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>Tw Cen MT Condensed Extra Bold</family>
+           <pointsize>24</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>                                 SIMULADOR</string>
+         </property>
+         <property name="margin">
+          <number>-4</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbs1">
+       <property name="cursor">
+        <cursorShape>ClosedHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>CURVAS DE LA CAPACIDAD DEL SISTEMA DE SALUD</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbs2">
+       <property name="cursor">
+        <cursorShape>ClosedHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>CURVAS DE RECUPERADOS E INFECTADOS</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pbs3">
+       <property name="cursor">
+        <cursorShape>ClosedHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>CURVAS DE LA VARIABILIDAD DE RO</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string/>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <widget class="QPushButton" name="info">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>25</y>
+          <width>71</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="cursor">
+         <cursorShape>ClosedHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(48, 255, 176);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="imagen.qrc">
+          <normaloff>:/imagenes/icon.ico</normaloff>:/imagenes/icon.ico</iconset>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Ruta del código del programa simulador a ejecutar:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="programaLineEdit">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 255, 255)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="title">
+        <string>     ARGUMENTOS:</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="5" column="2">
+         <widget class="QSlider" name="slider_gamma">
+          <property name="cursor">
+           <cursorShape>ClosedHandCursor</cursorShape>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="4">
+         <widget class="QLCDNumber" name="lcd2">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(0, 0, 0)</string>
+          </property>
+          <property name="smallDecimalPoint">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="4">
+         <widget class="QLCDNumber" name="lcd3">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(0, 0, 0)</string>
+          </property>
+          <property name="smallDecimalPoint">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#0055ff;&quot;&gt;GAMMA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="3">
+         <widget class="QLCDNumber" name="lcd00">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(0, 0, 0)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QSlider" name="slider_beta">
+          <property name="cursor">
+           <cursorShape>ClosedHandCursor</cursorShape>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#00aa00;&quot;&gt;BETA&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QLCDNumber" name="lcd0">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(0, 0, 0)</string>
+          </property>
+          <property name="inputMethodHints">
+           <set>Qt::ImhNone</set>
+          </property>
+          <property name="midLineWidth">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#aa0000;&quot;&gt;Tiempo máximo a mostrar&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3" colspan="2">
+         <widget class="QLCDNumber" name="lcd1">
+          <property name="styleSheet">
+           <string notr="true">background-color:rgb(0, 0, 0);
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+color:rgb(0, 0, 0)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QSlider" name="slider_tmax">
+          <property name="cursor">
+           <cursorShape>ClosedHandCursor</cursorShape>
+          </property>
+          <property name="whatsThis">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;T-MAX&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="pb_info1">
+          <property name="styleSheet">
+           <string notr="true">BACKGROUND-COLOR:rgb(255, 254, 212)</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagen.qrc">
+            <normaloff>:/imagenes/icon.ico</normaloff>:/imagenes/icon.ico</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="pb_info2">
+          <property name="styleSheet">
+           <string notr="true">BACKGROUND-COLOR:rgb(255, 254, 212)</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagen.qrc">
+            <normaloff>:/imagenes/icon.ico</normaloff>:/imagenes/icon.ico</iconset>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QPushButton" name="pb_info3">
+          <property name="styleSheet">
+           <string notr="true">BACKGROUND-COLOR:rgb(255, 254, 212)</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset resource="imagen.qrc">
+            <normaloff>:/imagenes/icon.ico</normaloff>:/imagenes/icon.ico</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <zorder>slider_gamma</zorder>
+       <zorder>slider_beta</zorder>
+       <zorder>label_4</zorder>
+       <zorder>slider_tmax</zorder>
+       <zorder>label_5</zorder>
+       <zorder>label_2</zorder>
+       <zorder>lcd2</zorder>
+       <zorder>lcd3</zorder>
+       <zorder>lcd1</zorder>
+       <zorder>lcd00</zorder>
+       <zorder>lcd0</zorder>
+       <zorder>horizontalSpacer_2</zorder>
+       <zorder>pb_info1</zorder>
+       <zorder>pb_info2</zorder>
+       <zorder>pb_info3</zorder>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ejecutarPushButton">
+       <property name="font">
+        <font>
+         <family>Rockwell</family>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ClosedHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>SIMULAR</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="quitarPushButton">
+         <property name="font">
+          <font>
+           <family>Rockwell</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>ClosedHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>CERRAR</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionEliminar_argumento">
+   <property name="text">
+    <string>Eliminar argumento</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="imagen.qrc"/>
+ </resources>
+ <connections/>
+</ui>
